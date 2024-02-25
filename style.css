@@ -89,15 +89,16 @@ img {
 }
 
 #first {
-    color: red;
+    color: rgb(175, 24, 212);
     width: 100%;
     text-align: center;
     margin-bottom: 20px;
-    background-color: rgb(235, 255, 59);
+    background:linear-gradient(to right, rgb(68, 252, 68), yellow);
     padding: 0;
 }
 
 #first h1 {
+    font-weight: 900;
     font-size: 30px;
 }
 

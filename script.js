@@ -31,8 +31,9 @@ btn.addEventListener('click', () => {
     li.style.fontSize = "15px"
     li.style.padding = "10px"
     li.style.backgroundColor = "blue"
-    // li.style.overflowX = "scroll"
     li.style.borderRadius = "10px"
+    li.style.borderTop = "2px solid aqua"
+    li.style.borderBottom = "2px solid aqua"
     const list = document.querySelector('.lists')
     list.appendChild(li);
 });
