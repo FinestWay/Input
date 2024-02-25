@@ -15,5 +15,6 @@ input.addEventListener('click', () => {
         newClass.remove('input-fields')
         newImg.remove('imgs')
         newCancel.remove('hide')
+        input.value = "";
     })
 });
