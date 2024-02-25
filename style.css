@@ -1,9 +1,17 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
 body {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     background-color: black;
+    color: white;
 }
+
 
 .input-icons {
     position: relative;
@@ -19,6 +27,7 @@ body {
     border-radius: 10px;
     padding: 11px;
     padding-left: 44px;
+    padding-right: 60px;
     font-size: 17px;
     color: rgb(255, 252, 252);
     background-color: grey;
@@ -43,6 +52,7 @@ img {
     border-radius: 10px;
     padding: 11px;
     padding-left: 32px;
+    padding-right: 60px;
     font-size: 17px;
     color: rgb(255, 252, 252);
     background-color: rgb(51, 51, 51);
@@ -50,33 +60,85 @@ img {
     outline: none;
 }
 
-.imgs{
+.imgs {
     filter: invert(1);
     margin-left: 10px;
     cursor: pointer;
     width: 17px;
 }
 
-.input-fields::placeholder{
+.input-fields::placeholder {
     color: white;
 }
 
-.cancel{
-    position: absolute;
-    right: 4px;
-    font-size: 14.2px;
+.cancel {
     cursor: pointer;
 }
 
-.hide::after{
+.hide::after {
     color: rgb(224, 255, 46);
-    border: 1px solid grey;
+    border: 1px solid rgb(151, 148, 148);
     border-radius: 10px;
-    padding: 4px;
-    box-shadow: 0px 0px 100px 6px yellow;
+    padding: 6px;
+    box-shadow: 270px -100px 600px 90px yellow,
+    -600px -100px 400px 90px yellow;
     font-family: 'Fira Code';
     content: "Cancel";
-    font-size: 15px;
+    font-size: 16px;
     font-weight: 400;
 }
 
+#first {
+    color: red;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: rgb(235, 255, 59);
+    padding: 0;
+}
+
+#first h1 {
+    font-size: 30px;
+}
+
+.second {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.button {
+    position: absolute;
+    right: 0px;
+}
+
+.submit::after {
+    font-family: 'Fira Code';
+    content: "Add";
+    padding: 9.5px;
+    background-color: rgb(16, 235, 16);
+    border: none;
+    border-radius: 10px;
+    font-size: 17px;
+    cursor: pointer;
+    color: black;
+    /* box-shadow: -50px 0px 90px 10px rgb(29, 248, 29); */
+}
+
+.third {
+    background-color: rgb(8, 175, 231);
+    width: 70vw;
+    margin: 30px 0px;
+    border-radius: 20px;
+}
+
+.lists {
+    padding: 10px;
+    list-style-type: decimal;
+    list-style-position: inside;
+}
+
+.list {
+    font-size: 20px;
+}
