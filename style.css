@@ -127,18 +127,35 @@ img {
 }
 
 .third {
-    background-color: rgb(8, 175, 231);
-    width: 70vw;
-    margin: 30px 0px;
+    /* background-color: rgb(8, 175, 231); */
+    width: 75vw;
+    margin:30px auto;
     border-radius: 20px;
 }
 
+.lists::-webkit-scrollbar{
+    display: none;
+}
+
 .lists {
-    padding: 10px;
+    position: relative;
+    overflow-x: scroll;
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 6px;
     list-style-type: decimal;
     list-style-position: inside;
 }
 
 .list {
+    width: 100%;
+    background-color: rgb(42, 42, 255);
+    margin: 10px;
     font-size: 20px;
+    padding: 6px;
+    border-radius: 10px;
 }
